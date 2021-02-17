@@ -74,12 +74,12 @@ class MessageEvents(commands.Cog):
             except:
                 return await message.channel.send(f"{message.author.mention} | Advertisements aren't allowed.")
 
-        try:
-            await asyncio.sleep(0.1) #i don't what its doig here lol
-            await message.delete()
+       
+        await asyncio.sleep(0.1)
+            
 
-        except:
-            return await message.channel.send(f"{emote.xmark} | World-chat requires `manage_messages` permissions to function properly.")
+     
+        
 
         for hook in self.bot.mwebhooks:
             try:
